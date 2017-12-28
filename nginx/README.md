@@ -1,29 +1,30 @@
-##帮助
+# 帮助 #
     nginx -h
-##启动
+# 启动 #
     start niginx
     打开任务管理器，单靠两个nginx.exe，说明已经启动了
     访问：http://127.0.0.1 Welcome to nginx!
-##核心配置文件
+# 核心配置文件 #
     nginx.conf
 
-##检查配置文件
+# 检查配置文件 #
     nginx -t
 
-##重新加载配置文件
+# 重新加载配置文件 #
     nginx -s reload
 
-##关闭
+# 关闭 #
     nginx -s stop
 
+# 样例 #
 
-###demo1
+## demo1 ##
     server_name 172.16.9.86:32854;
     location / {
         proxy_pass http://172.16.9.86:32854;
     }
 
-###demo2
+## demo2 ##
     location ~ \.jsp$ {  
             proxy_pass http://localhost:8080;  
     }  
@@ -32,7 +33,7 @@
         root D:/software/developerTools/server/apache-tomcat-7.0.8/webapps/ROOT;  
     }
 
-###demo3
+## demo3 ##
     upstream tosin_test {
         server 172.16.9.235:8080 weight=1;
         server 172.16.9.248:10090 weight=5;
