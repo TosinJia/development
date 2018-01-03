@@ -57,3 +57,4 @@ http://nginx.org/en/docs/http/ngx_http_proxy_module.html
 windows Nginx基本使用方法
     http://blog.csdn.net/u011418717/article/details/52776090
 
+修改
